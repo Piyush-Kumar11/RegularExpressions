@@ -15,7 +15,8 @@ namespace RegularExpression
             //reg.ExtractDate();
             //reg.ExtractMultipleMatches();
             //reg.CheckValidMobile();
-            reg.ValidateEmail();
+            //reg.ValidateEmail();
+            //reg.VaidateEveryMobileNum();
         }
     }
 }

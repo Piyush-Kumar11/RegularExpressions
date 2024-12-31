@@ -71,5 +71,21 @@ namespace RegularExpression
             }
         }
 
+        public void VaidateEveryMobileNum()
+        {
+            Console.WriteLine("Enter the number:");
+            string num = Console.ReadLine();
+            string pattern = @"(^[0-9]{10}$)|(^\+[0-9]{2}\s+[0-9]{2}[0-9]{8}$)|(^[0-9]{3}-[0-9]{4}-[0-9]{4}$)";
+            Regex x = new Regex(pattern);
+            if (x.IsMatch(num))
+            {
+                Console.WriteLine("Valid Phone number");
+            }
+            else
+            {
+                Console.WriteLine("Not a valid number!");
+            }
+        }
+
     }
 }
