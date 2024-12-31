@@ -8,8 +8,14 @@ namespace RegularExpression
 {
     internal class Program
     {
+        static RegexExamples reg = new RegexExamples();
         static void Main(string[] args)
         {
+
+            //reg.ExtractDate();
+            //reg.ExtractMultipleMatches();
+            //reg.CheckValidMobile();
+            reg.ValidateEmail();
         }
     }
 }
